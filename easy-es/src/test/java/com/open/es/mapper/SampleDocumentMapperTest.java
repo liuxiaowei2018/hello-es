@@ -6,9 +6,12 @@ import com.xpc.easyes.core.conditions.LambdaEsIndexWrapper;
 import com.xpc.easyes.core.conditions.LambdaEsQueryWrapper;
 import com.xpc.easyes.core.conditions.LambdaEsUpdateWrapper;
 import com.xpc.easyes.core.enums.FieldType;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 
@@ -17,6 +20,8 @@ import javax.annotation.Resource;
  * @date 2022年10月09日 13:06
  * @Description
  */
+@Slf4j
+@RunWith(SpringRunner.class)
 @SpringBootTest(classes = HelloEasyEsApplication.class)
 public class SampleDocumentMapperTest {
 

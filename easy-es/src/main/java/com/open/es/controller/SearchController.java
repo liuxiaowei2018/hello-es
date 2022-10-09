@@ -115,7 +115,7 @@ public class SearchController {
      * @date 2022/10/9 13:02
      * @return com.xpc.easyes.core.common.PageInfo<com.open.es.pojo.SampleDocument>
      */
-    @GetMapping("/sample/v4")
+    @GetMapping("/sample/v5")
     public PageInfo<SampleDocument> searchV5() throws IOException {
 
         // 高亮查询出所有内容类似xxx的文档列表
