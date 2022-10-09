@@ -1,3 +1,28 @@
+server:
+  port: 13016
+
 logging:
   level:
     root: info
+
+# es集群名称
+elasticsearch:
+  clusterName: elasticsearch
+  #es用户名
+  #userName: elastic
+  #es密码
+  #password: elastic
+  # es host ip 地址(集群)：本次使用的是单机模式
+  hosts: 172.31.2.27:9200
+  # es 请求方式
+  scheme: http
+  # es 连接超时时间
+  connectTimeOut: 1000
+  # es socket 连接超时时间
+  socketTimeOut: 30000
+  # es 请求超时时间
+  connectionRequestTimeOut: 500
+  # es 最大连接数
+  maxConnectNum: 100
+  # es 每个路由的最大连接数
+  maxConnectNumPerRoute: 100
